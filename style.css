@@ -24,6 +24,8 @@ footer{
 img{
     display: block;
     margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #000000e3;
 }
 
 header, footer{
