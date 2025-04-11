@@ -3,14 +3,43 @@ body{
     background-color: rgb(185, 219, 242);
     color: #000;
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+}
+
+a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0056b3;
+    text-decoration: underline;
 }
 
 header{
-    background: linear-gradient(to right, #b72ea5 , #4518b8, #df8219);
+    background: linear-gradient(to right, #831bcd, #f9620b);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.58);
     margin: 20px, auto;
     max-width: 840px;
+    padding: 1px;
+}
+
+header:hover{
+    background: linear-gradient(to left, #9126c0 , #ea8d23);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.58);
+    margin: 20px, auto;
+    max-width: 840px;   
 }
 
 footer{
@@ -24,9 +53,33 @@ footer{
 img{
     display: block;
     margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px #000000e3;
+    height: 300px;
+    width: 300px;
+    border-radius: 70%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.58);
+    object-fit: cover;
 }
+
+form{
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
 
 header, footer{
     text-align: center;
@@ -38,22 +91,22 @@ li{
     font-size: larger;
 }
 
-button{
-    padding: auto;
-    color: white;
-    height: 25px;
-    width: 80px;
+form button{
+    background-color: #007bff;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
     border-radius: 8px;
     justify-content: center;
     margin: 0, auto;
     align-items: center;
-    border: none;
-    background: rgb(96, 96, 223);
     box-shadow: 0 5px 10px rgba(28, 46, 105, 0.712);
 }
 
 button:hover{
-    background-color: gray;
+    background-color: #0056b3;
 }
 
 p{
@@ -65,11 +118,12 @@ iframe{
 }
 
 section{
+    justify-content: center;
     margin: 20px, auto;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.626);
     border-radius: 8px;
     max-width: 800px;
-    text-align: left;
+    justify-items: center;
 }
